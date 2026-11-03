@@ -1,0 +1,24 @@
+{
+  "name": "codex-cua-proxy",
+  "version": "0.1.0",
+  "description": "Patch the ChatGPT / Codex desktop CUA entry to inherit the macOS system HTTP/HTTPS proxy",
+  "type": "module",
+  "bin": {
+    "codex-cua-proxy": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "macos-system-proxy.mjs"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kurefm/codex-cua-proxy.git"
+  },
+  "license": "MIT"
+}

@@ -1,4 +1,5 @@
-import { execFileSync } from "node:child_process";
+// 本文件会被 CLI 原样内联进 CUA 入口的 try 块，因此不能使用顶层 import/export。
+const { execFileSync } = await import("node:child_process");
 
 // shortcut: 仅读取启动时的手动 HTTP/HTTPS 代理，改用 PAC 时需扩展。
 function applySystemProxy() {
